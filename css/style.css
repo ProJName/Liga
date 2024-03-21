@@ -1,44 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 @font-face {
     font-family: 'Montserrat';
-    src: url(/fonts/Montserrat-400.woff2) format('(woff2)');
+    src: url("/fonts/Montserrat-400.woff2") format('(woff2)');
     font-weight: 400;
 }
 
 @font-face {
     font-family: 'Montserrat';
-    src: url(/fonts/Montserrat-500.woff2) format('(woff2)');
+    src: url("/fonts/Montserrat-500.woff2") format('(woff2)');
     font-weight: 500;
 }
 
 @font-face {
     font-family: 'Montserrat';
-    src: url(/fonts/Montserrat-600.woff2) format('(woff2)');
+    src: url("/fonts/Montserrat-600.woff2") format('(woff2)');
     font-weight: 600;
 }
 
 @font-face {
     font-family: 'Montserrat';
-    src: url(/fonts/Montserrat-700.woff2) format('(woff2)');
+    src: url("/fonts/Montserrat-700.woff2") format('(woff2)');
     font-weight: 700;
 }
 
 @font-face {
     font-family: 'Playfair';
-    src: url(/fonts/Playfair-700.woff2) format('(woff2)');
+    src: url("/fonts/Playfair-700.woff2") format('(woff2)');
     font-weight: 700;
 }
 
 @font-face {
     font-family: 'Playfair';
-    src: url(/fonts/Playfair-800.woff2) format('(woff2)');
+    src: url("/fonts/Playfair-800.woff2") format('(woff2)');
     font-weight: 800;
 }
 
-@media (min-width: 1440px) {
-    body {
-        margin: 0;
-        width: 1440px;
-    }
+
+/* @media (min-width:769px) { */
 
     header {
         width: 1440px;
@@ -46,9 +48,11 @@
         top: 395px;
         left: 385px;
         padding: 40px 75px 30px 75px;
+        gap: 0px;
         display: flex;
         justify-content: space-between;
         background-color: #D2691E;
+        opacity: 0px;
     }
 
     .logo {
@@ -124,4 +128,27 @@
 
 
     }
+
+
+@media (max-width: 768px) {
+
+header{
+    width: 768px;
+    height: 120px;
+    left: 2400px;
 }
+
+.logo{
+    width: 309px;
+    height: 50px;
+}
+
+
+}
+
+    @media (max-width: 375px) {
+        body {
+            margin: 0;
+            width: 375px;
+        }
+    }
